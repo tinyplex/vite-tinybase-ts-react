@@ -1,12 +1,11 @@
 import { createStore } from 'tinybase';
+import { Provider, useCreateStore } from 'tinybase/debug/ui-react';
 import {
-  Provider,
-  useCreateStore,
-  useTables,
-  useValues,
-} from 'tinybase/ui-react';
+  SortedTableInHtmlTable,
+  StoreInspector,
+  ValuesInHtmlTable,
+} from 'tinybase/debug/ui-react-dom';
 import { Buttons } from './Buttons';
-import { Details } from './Details';
 
 export const App = () => {
   const store = useCreateStore(() => {
@@ -26,8 +25,30 @@ export const App = () => {
   return (
     <Provider store={store}>
       <Buttons />
-      <Details label='Values' hook={useValues} />
-      <Details label='Tables' hook={useTables} />
+      <div>
+        <h2>Values</h2>
+        <ValuesInHtmlTable />
+      </div>
+      <div>
+        <h2>Species Table</h2>
+        <SortedTableInHtmlTable
+          tableId='species'
+          cellId='price'
+          descending={true}
+          sortOnClick={true}
+          className='sortedTable'
+        />
+        <h2>Pets Table</h2>
+        <SortedTableInHtmlTable
+          tableId='pets'
+          cellId='name'
+          limit={5}
+          sortOnClick={true}
+          className='sortedTable'
+          paginator={true}
+        />
+      </div>
+      <StoreInspector />
     </Provider>
   );
 };

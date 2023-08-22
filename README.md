@@ -1,7 +1,8 @@
 # vite-tinybase-ts-react
 
 This is a [Vite](https://vitejs.dev/) template for a simple
-[TinyBase](https://tinybase.org/) app, using TypeScript and React.
+[TinyBase](https://tinybase.org/) app, using TypeScript and React, and also
+demonstrating the TinyBase ui-react-dom module UI components.
 
 ## Instructions
 
