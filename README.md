@@ -32,7 +32,7 @@ npm run dev
 
 5. Go the URL shown and enjoy!
 
-![](https://tinybase.org/vite-tinybase.png)
+![](https://tinybase.org/vite-tinybase-2.png)
 
 ## Other templates
 
