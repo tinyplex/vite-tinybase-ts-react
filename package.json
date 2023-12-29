@@ -7,14 +7,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@types/react-dom": "^18.2.17",
+    "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.2.1",
     "typescript": "^5.3.3",
-    "vite": "^5.0.7"
+    "vite": "^5.0.10"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tinybase": "^4.5.8"
+    "tinybase": "^4.5.11"
   }
 }
