@@ -1,5 +1,5 @@
 import { StrictMode } from 'react';
-import { createStore } from 'tinybase';
+import { createStore } from 'tinybase/debug';
 import { Provider, useCreateStore } from 'tinybase/debug/ui-react';
 import {
   SortedTableInHtmlTable,
