@@ -1,11 +1,11 @@
 import { StrictMode } from 'react';
-import { createStore } from 'tinybase/debug';
-import { Provider, useCreateStore } from 'tinybase/debug/ui-react';
+import { createStore } from 'tinybase';
+import { Provider, useCreateStore } from 'tinybase/ui-react';
 import {
   SortedTableInHtmlTable,
-  StoreInspector,
   ValuesInHtmlTable,
-} from 'tinybase/debug/ui-react-dom';
+} from 'tinybase/ui-react-dom';
+import { Inspector } from 'tinybase/ui-react-inspector';
 import { Buttons } from './Buttons';
 
 export const App = () => {
@@ -50,7 +50,7 @@ export const App = () => {
             paginator={true}
           />
         </div>
-        <StoreInspector />
+        <Inspector />
       </Provider>
     </StrictMode>
   );
