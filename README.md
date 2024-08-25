@@ -4,6 +4,8 @@ This is a [Vite](https://vitejs.dev/) template for a simple
 [TinyBase](https://tinybase.org/) app, using TypeScript and React, and also
 demonstrating the TinyBase ui-react-dom module UI components.
 
+<img width="847" alt="image" src="https://github.com/user-attachments/assets/cbc29a9f-7b26-4018-8359-e08706a31704">
+
 ## Instructions
 
 1. Make a copy of this template into a new directory:
@@ -31,8 +33,6 @@ npm run dev
 ```
 
 5. Go the URL shown and enjoy!
-
-![](https://tinybase.org/vite-tinybase-2.png)
 
 ## Other templates
 
