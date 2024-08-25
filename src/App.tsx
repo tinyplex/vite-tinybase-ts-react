@@ -26,20 +26,18 @@ export const App = () => {
   return (
     <StrictMode>
       <Provider store={store}>
+        <header>
+          <h1>
+            <img src='/favicon.svg' />
+            TinyBase & React
+          </h1>
+        </header>
         <Buttons />
         <div>
           <h2>Values</h2>
           <ValuesInHtmlTable />
         </div>
         <div>
-          <h2>Species Table</h2>
-          <SortedTableInHtmlTable
-            tableId='species'
-            cellId='price'
-            descending={true}
-            sortOnClick={true}
-            className='sortedTable'
-          />
           <h2>Pets Table</h2>
           <SortedTableInHtmlTable
             tableId='pets'
